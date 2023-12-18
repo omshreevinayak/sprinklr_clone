@@ -1,0 +1,209 @@
+.navbar-collapse form {
+    margin-left: 7rem;
+}
+
+.title {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.hero .text {
+    color: rgb(255, 255, 255);
+}
+
+.heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.heading h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.brands {
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+}
+
+.brands-logo {
+    align-items: center;
+    background-color: red;
+    display: flex;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.content {
+    margin: 2rem 2rem;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+}
+
+button {
+    --primary-color: #111;
+    --hovered-color: rgb(29, 131, 240);
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+button p {
+    margin: 0;
+    position: relative;
+    font-size: 15px;
+    color: var(--hovered-color)
+}
+
+button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+}
+
+button p::before {
+    position: absolute;
+    /*   box-sizing: border-box; */
+    content: "Subscribe";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+}
+
+button svg {
+    color: var(--hovered-color);
+    transition: 0.2s;
+    position: relative;
+    width: 15px;
+    transition-delay: 0.2s;
+}
+
+.industry {
+    padding: 160px 0px;
+    background: #F8F8FA;
+}
+
+.customer-data {
+    padding-top: 160px;
+    padding-bottom: 0;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+/* .card-section {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    max-width: 1520px;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+} */
+
+
+
+.card-container {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-row-gap: 32px;
+    grid-column-gap: 32px;
+}
+
+.card-1 {
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 0;
+    flex-direction: column;
+    -moz-box-pack: start;
+    justify-content: flex-start;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0;
+    box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.11);
+    font-size: 16px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+    min-width: 0;
+    padding-top: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.empty {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.khali {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+}
+
+select {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 50%;
+}
+
+select:focus {
+    outline: none;
+}
+
+section .badge {
+    justify-content: center;
+}
+
+section .badge:hover {
+    background-color: gray;
+}
